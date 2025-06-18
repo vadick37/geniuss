@@ -1,0 +1,201 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v23-latin-300.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v23-latin-regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v23-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v23-latin-900.woff2') format('woff2');
+}
+:root {
+    --color-primary-dark:  #31261A;
+    --color-primary-light: #FAF4EA;
+    --color-brand-light: #819B57;
+    --color-brand-dark: #465929;
+}
+
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.visualy-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* button */
+.button {
+    color: #FAF4EA;
+    background-color: var(--color-brand-light) ;
+    border: 2px solid var(--color-brand-light);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-brand-dark);
+    font-weight: 600;
+}
+
+/* link */
+.link {
+    color: var(--color-primary-light);
+    flex-direction: none;
+    
+}
+
+.link:hover {
+    color: var(--color-brand-light);
+    font-weight: 600;
+}
+
+/* hero section */
+
+.hero-section {
+    padding: 272px 0;
+}
+
+.hero-title { 
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--color-primary-light);
+    font-weight: 900;
+    font-size: 128px;
+}
+
+.hero-title .accent {       
+    color: var(--color-brand-light);
+}
+
+/* advantages section */
+.advantages-list {
+    background-color: var(--color-brand-light);
+    color: var(--color-primary-light);
+}
+
+
+.advantages-item {
+ font-size: 20px;
+ font-weight: 300;   
+}
+
+.section-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.3;
+}
+
+.section-title .accent{
+    color: var(--color-brand-dark);
+}
+
+/* Traditions section */
+
+.traditions-title {
+        margin-bottom: 42px;
+}
+
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-text .brand {
+color: var(--color-brand-light);
+font-weight: 600;
+}
+
+.traditions-text .uppercase {
+text-transform: uppercase;
+}
+
+/* Chefs section */
+.chef-title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.chefs-title {
+    margin-bottom: 80px;
+}
+
+/* Format section */
+ .formats-title {
+    font-size: 24px;
+    font-weight: 600;
+ }
+ .formats-text {
+    font-size: 14px;
+    font-weight: 300;
+ }
+
+ /* Footer */
+
+ .address-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+    text-decoration: none;
+ }
+
+ .address-link:hover {
+    color: var(--color-brand-light);
+ }
+
+ .address-copyright {
+    font-size: 14px;
+ }
