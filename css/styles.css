@@ -50,6 +50,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
 }
 
 address {
@@ -77,6 +78,11 @@ h1, h2, h3, h4, h5, h6, p {
     overflow: hidden;
 }
 
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+}
 /* button */
 .button {
     color: #FAF4EA;
@@ -84,6 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
     border: 2px solid var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
+    padding: 16px 32px;
 }
 
 .button:hover {
@@ -165,6 +172,7 @@ text-transform: uppercase;
 
 /* Chefs section */
 .chef-title {
+    margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
 }
@@ -174,7 +182,12 @@ text-transform: uppercase;
 }
 
 /* Format section */
- .formats-title {
+
+.fotmats-title {
+    margin-bottom: 80px;
+}
+
+ .format-title {
     font-size: 24px;
     font-weight: 600;
  }
@@ -182,6 +195,12 @@ text-transform: uppercase;
     font-size: 14px;
     font-weight: 300;
  }
+
+ /* Contact section */
+
+.contact-title{
+    margin-bottom: 16px;
+}
 
  /* Footer */
 
