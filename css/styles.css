@@ -34,8 +34,10 @@
 :root {
     --color-primary-dark:  #31261A;
     --color-primary-light: #FAF4EA;
+    --color-secondary-dark: #a18268;
     --color-brand-light: #819B57;
     --color-brand-dark: #465929;
+    --color-brand-white: #cfcfbc;
 }
 
 /* Base */
@@ -45,6 +47,7 @@
 }
 
 body {
+    background-color: var(--color-primary-light);
     font-family: 'Poppins', sans-serif;
     color: var(--color-primary-dark);
     font-size: 18px;
@@ -104,7 +107,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* link */
 .link {
     color: var(--color-primary-light);
-    flex-direction: none;
+    text-decoration: none;
     
 }
 
@@ -142,6 +145,10 @@ gap: 64px;
 
 .hero-section {
     padding: 272px 0;
+    background-image: url(../img/фон.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title { 
@@ -182,6 +189,10 @@ gap: 64px;
     line-height: 1.3;
 }
 
+.section-title.centred {
+    text-align: center;
+}
+
 .section-title .accent{
     color: var(--color-brand-dark);
 }
@@ -219,6 +230,12 @@ text-transform: uppercase;
 }
 
 /* Chefs section */
+
+.chef-image {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+}
+
 .chef-title {
     margin-bottom: 16px;
     font-size: 40px;
@@ -226,7 +243,17 @@ text-transform: uppercase;
 }
 
 .chefs-title {
-    margin-bottom: 80px;
+    max-width: 532px;
+    margin: 0 auto 80px;
+}
+
+.chefs-title::before,
+.chefs-title::after {
+    display: block;
+    max-width: 352px;
+    width: 352px;
+    border: 2px solid var(--color-brand-white);
+    content: "";
 }
 
 /* Format section */
@@ -243,9 +270,15 @@ text-transform: uppercase;
 
 .format-card {
     border: 1px solid lightgray;
-    border-radius: 16px;
     padding: 24px;
-}
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, 
+    rgba(49, 37.999996185302734, 26, 0) 55%, 
+    rgba(49, 37.999996185302734, 26,0.71) 73%,
+    var(--color-primary-dark) 100%);
+    height: 444px;
+    width: 349px;
+    }
 
 .fotmats-title {
     margin-bottom: 80px;
@@ -282,3 +315,12 @@ text-transform: uppercase;
  .address-copyright {
     font-size: 14px;
  }
+
+ /* Footer */
+
+.footer {
+    background-image: url(../img/footer.png);
+    background-color: var(--color-primary-dark);
+    background-position: center;
+    background-size: cover;
+}
